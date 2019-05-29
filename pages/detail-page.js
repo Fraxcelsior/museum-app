@@ -34,5 +34,15 @@ function submitComment() {
     comment.appendChild(p);
     console.log(comment);
 
+    //This will display the newly added elements (and their input) on the page
+    const commentSection = document.getElementById("comments");
+    console.log(commentSection);
+    commentSection.appendChild(comment);
+
+    //This resets the fields
+    inputField.value = null;
+    msgField.value = null;
+
+
 }
 
